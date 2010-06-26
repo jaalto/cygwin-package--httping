@@ -1,0 +1,66 @@
+.TH HTTPING 1 "May  4, 2004"
+.SH NAME
+httping \- ping-like program but for http-requests
+.SH SYNOPSIS
+.B httping
+.RI [ -g ] [ -h ]
+[ -p port] [ -x proxy:port ] [ -c count ]
+[ -i interval ] [ -t timeout ] [ -slfm ] [ -o rc,rrc,... ] [ -e string ]
+[ -q ] url
+.SH DESCRIPTION
+Given an URL,
+.B httping
+will show how long it takes to connect, send a request and retrieve the
+reply (only the headers).
+.SH OPTIONS
+.TP
+.B \-g url_addr
+Specify the URL to ping (e.g. -g http://localhost/)
+.TP
+.B \-h hostname
+Specify hostname to use (e.g. -h localhost)
+.B \-l
+Specify OpenSSL support
+.TP
+.B \-p port_nr
+Specify port number to connect
+.TP
+.B \-x proxy:port
+Indicate the proxy and port which
+.B httping
+will use, in case of needed.
+.TP
+.B \-c ping_nr
+How many times it will connect
+.TP
+.B \-i interval
+Number of seconds to delay between connection
+.TP
+.B \-t timeout
+Number of seconds to timeout (the default is 30)
+.TP
+.B \-s
+Show status codes.
+.TP
+.B \-f
+Flood connection: No delays.
+.TP
+.B \-m
+Give machine parseable output.
+.TP
+.B \-o rc, rc, ...
+What HTTP results codes indicate 'ok'. This should go WITHOUT spaces
+between each other.
+.TP
+.B \-e string
+String to display when HTTP result code doesn't match
+.TP
+.B \-q
+Keep quiet: Only return codes.
+.SH SEE ALSO
+.BR ping (1).
+.SH AUTHOR
+httping was written by Folkert Van Heusden <folkert@vanheusden>.
+.br
+This manual page was written by David Moreno Garza <damog@damog.net>.
+

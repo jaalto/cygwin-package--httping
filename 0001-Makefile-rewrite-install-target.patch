@@ -1,0 +1,60 @@
+diff --git a/Makefile b/Makefile
+index 2fc8efd..7d319c3 100644
+--- a/Makefile
++++ b/Makefile
+@@ -14,12 +14,29 @@
+ 
+ include version
+ 
++DESTDIR =
++prefix          = /usr
++exec_prefix     = $(prefix)
++man_prefix      = $(prefix)/share
++
++INSTALL = /usr/bin/install
++INSTALL_BIN     = $(INSTALL) -m 755
++INSTALL_DATA    = $(INSTALL) -m 644
++INSTALL_OBJS    = httping.exe
++
++MANDIR          = $(DESTDIR)$(man_prefix)/man/man1
++BINDIR          = $(DESTDIR)$(exec_prefix)/bin
++
+ DEBUG=-g # -D_DEBUG
+ LDFLAGS+=-lssl -lcrypto $(DEBUG)
+ CFLAGS+=-O2 -Wall -DVERSION=\"$(VERSION)\" $(DEBUG)
+ 
+ OBJS=mem.o http.o io.o str.o error.o utils.o main.o tcp.o mssl.o res.o
+ 
++DEBUG=#-g
++LDFLAGS=-lssl -lcrypto $(DEBUG)
++CFLAGS=-O2 -Wall -DVERSION=\"$(VERSION)\" $(DEBUG)
++
+ all: httping
+ 
+ httping: $(OBJS)
+@@ -27,10 +44,24 @@ httping: $(OBJS)
+ 	#
+ 	# Oh, blatant plug: http://keetweej.vanheusden.com/wishlist.html
+ 
+-install: httping
++install-old: httping
+ 	cp httping $(DESTDIR)/usr/bin
+ 	cp httping.1 $(DESTDIR)/usr/share/man/man1/
+ 
++install-bin:
++	pwd
++	$(INSTALL_BIN) -d $(BINDIR)
++	$(INSTALL_BIN) -s $(INSTALL_OBJS) $(BINDIR)
++
++install-man:
++	$(INSTALL_BIN) -d $(MANDIR)
++	$(INSTALL_DATA) *.1 $(MANDIR)
++
++httping-no-ssl:
++	make -f Makefile.nossl
++
++install: httping-no-ssl install-bin
++
+ clean:
+ 	rm -f $(OBJS) core httping
+ 

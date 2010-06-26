@@ -1,0 +1,4 @@
+# Copyright (C) 2007 Jari AAlto; Licenced under GPL v2 or later
+
+tag1: httping
+  http://packages.debian.org/unstable/httping pregexp:tar.gz file:orig.tar.gz new: x:

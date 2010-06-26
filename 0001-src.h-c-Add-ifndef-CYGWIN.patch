@@ -1,0 +1,34 @@
+ str.c |    2 ++
+ str.h |    2 ++
+ 2 files changed, 4 insertions(+), 0 deletions(-)
+
+diff --git a/str.c b/str.c
+index ad41052..f4e3e06 100644
+--- a/str.c
++++ b/str.c
+@@ -18,6 +18,7 @@
+ #include "mem.h"
+ #include "utils.h"
+ 
++#ifndef __CYGWIN__
+ #ifndef strndup
+ char *strndup(char *in, int size)
+ {
+@@ -29,3 +30,4 @@ char *strndup(char *in, int size)
+ 	return out;
+ }
+ #endif
++#endif
+diff --git a/str.h b/str.h
+index 7f0e4e8..0615f88 100644
+--- a/str.h
++++ b/str.h
+@@ -15,6 +15,8 @@
+ 
+ #include <string.h>
+ 
++#ifndef __CYGWIN__
+ #ifndef strndup
+ char *strndup(char *in, int size);
+ #endif
++#endif
