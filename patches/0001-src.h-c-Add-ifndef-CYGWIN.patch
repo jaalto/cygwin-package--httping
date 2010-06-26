@@ -1,9 +1,19 @@
+From 19c66e1458c03b8ffed90b387baf2a826ef9dc23 Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Sat, 26 Jun 2010 12:04:58 +0300
+Subject: [PATCH] Add ifdef __CYGWIN__
+Organization: Private
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
  str.c |    2 ++
  str.h |    2 ++
  2 files changed, 4 insertions(+), 0 deletions(-)
 
 diff --git a/str.c b/str.c
-index ad41052..f4e3e06 100644
+index f53d6c3..d647a73 100644
 --- a/str.c
 +++ b/str.c
 @@ -18,6 +18,7 @@
@@ -11,16 +21,16 @@ index ad41052..f4e3e06 100644
  #include "utils.h"
  
 +#ifndef __CYGWIN__
- #ifndef strndup
+ #ifndef _GNU_SOURCE
  char *strndup(char *in, int size)
  {
-@@ -29,3 +30,4 @@ char *strndup(char *in, int size)
+@@ -29,3 +30,4 @@
  	return out;
  }
  #endif
 +#endif
 diff --git a/str.h b/str.h
-index 7f0e4e8..0615f88 100644
+index 87d2b4f..b2f8738 100644
 --- a/str.h
 +++ b/str.h
 @@ -15,6 +15,8 @@
@@ -28,7 +38,10 @@ index 7f0e4e8..0615f88 100644
  #include <string.h>
  
 +#ifndef __CYGWIN__
- #ifndef strndup
+ #ifndef _GNU_SOURCE
  char *strndup(char *in, int size);
  #endif
 +#endif
+-- 
+1.7.0.4
+
