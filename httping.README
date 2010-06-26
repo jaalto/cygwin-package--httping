@@ -8,11 +8,13 @@ url; send a request and retrieve the reply (only the headers).
 
 Runtime requirements:
   cygwin
-  openssl
+  libgcc1
+  libopenssl098
 
 Build requirements:
   cygwin
-  openssl
+  gcc4
+  openssl-devel
 
 Canonical homepage:
   http://www.vanheusden.com/httping
@@ -40,26 +42,20 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack httping-0.0.95-1-src.tar.bz2
+  unpack httping-1.4.1-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./httping*.sh all
 
 This will create:
-  httping-0.0.95-1.tar.bz2
-  httping-0.0.95-1-src.tar.bz2
+  httping-1.4.1-1.tar.bz2
+  httping-1.4.1-1-src.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary distro:
-
-usr/bin/httping.exe
-usr/share/doc/Cygwin/httping-0.0.95.README
-usr/share/doc/httping-0.0.95/license.txt
-usr/share/doc/httping-0.0.95/readme.txt
-usr/share/man/man1/httping-nossl.1.gz
-usr/share/man/man1/httping.1.gz
+  See Cygwin package archive
 
 ------------------
 
@@ -70,8 +66,11 @@ Port Notes:
 - No manual page: Copied from Debian.
 - strc.[ch]: added #ifndef __CYGWIN__
 
+----- version 1.4.1-1 -----
+- New upstream release 2010-06-26 Jari Aalto
+
 ----- version 1.2.5-1 -----
 - Initial release 2007-09-12 Jari Aalto
 
-Cygwin port maintained by: Jari Aalto <jari aalto A T cante dt net>
-Copyright (C) 2007 Jari Aalto; Licenced under GPL v2 or later
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2007-2010 Jari Aalto; Licenced under GPL v2 or later
