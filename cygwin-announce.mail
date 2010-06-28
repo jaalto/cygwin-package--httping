@@ -1,7 +1,6 @@
--- Copyright (C) 2007-2010 Jari Aalto; Licenced under GPL v2 or later
-
 To: cygwin-announce@cygwin.com
 Subject: Updated: httping 1.4.1-1 -- Ping-like program for http-requests
+--text follows this line--
 
 PACKAGE DESCRIPTION
 ===================
@@ -15,7 +14,7 @@ url; send a request and retrieve the reply (only the headers).
 CHANGES SINCE LAST RELEASE
 ==========================
 
-The changes are listed in homepage.
+See homepage and section "Changes".
 
 INSTALL OR UPGRADE NOTES
 ========================
