@@ -42,15 +42,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack httping-1.4.1-1-src.tar.bz2
+  unpack httping-1.4.4-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./httping*.sh all
 
 This will create:
-  httping-1.4.1-1.tar.bz2
-  httping-1.4.1-1-src.tar.bz2
+  httping-1.4.4-1.tar.bz2
+  httping-1.4.4-1-src.tar.bz2
 
 -------------------------------------------
 
@@ -66,6 +66,9 @@ Port Notes:
 - No manual page: Copied from Debian.
 - strc.[ch]: added #ifndef __CYGWIN__
 
+----- version 1.4.4-1 -----
+- New upstream release 2011-02-10 Jari Aalto
+
 ----- version 1.4.1-1 -----
 - New upstream release 2010-06-26 Jari Aalto
 
@@ -73,4 +76,4 @@ Port Notes:
 - Initial release 2007-09-12 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2007-2010 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2007-2011 Jari Aalto; Licenced under GPL v2 or later
