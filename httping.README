@@ -12,11 +12,10 @@ Runtime requirements:
   libopenssl098
 
 Build requirements:
-  cygwin
-  gcc4
   openssl-devel
 
 Canonical homepage:
+  http://freshmeat.net/projects/httping
   http://www.vanheusden.com/httping
   http://packages.debian.org/httping
 
