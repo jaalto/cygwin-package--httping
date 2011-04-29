@@ -5,7 +5,7 @@ Subject: Updated: httping 1.4.4-2 -- Ping-like program for http-requests
 PACKAGE DESCRIPTION
 ===================
 
-Homepage: http://www.vanheusden.com/httping
+Homepage: http://freshmeat.net/projects/httping
 License : GPL
 
 Show how long it takes to connect to a hostname or remote
