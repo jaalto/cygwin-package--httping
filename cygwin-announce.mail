@@ -1,5 +1,5 @@
 To: cygwin-announce@cygwin.com
-Subject: Updated: httping 1.4.4-2 -- Ping-like program for http-requests
+Subject: Updated: httping 1.5.2-1 -- Ping-like program for http-requests
 --text follows this line--
 
 PACKAGE DESCRIPTION
@@ -14,8 +14,7 @@ url; send a request and retrieve the reply (only the headers).
 CHANGES SINCE LAST RELEASE
 ==========================
 
-- Cygwin: remove extra *.gz file from manual page directory.
-- Upstream: see homepage and section "Changes".
+See homepage and section "Changes".
 
 INSTALL OR UPGRADE NOTES
 ========================

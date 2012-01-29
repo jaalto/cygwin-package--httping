@@ -7,7 +7,6 @@ Show how long it takes to connect to a hostname or remote
 url; send a request and retrieve the reply (only the headers).
 
 Runtime requirements:
-  cygwin
   libgcc1
   libopenssl098
 
@@ -41,15 +40,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack httping-1.4.4-2-src.tar.bz2
+  unpack httping-1.5.2-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./httping*.sh all
 
 This will create:
-  httping-1.4.4-2.tar.bz2
-  httping-1.4.4-2-src.tar.bz2
+  httping-1.5.2-1.tar.bz2
+  httping-1.5.2-1-src.tar.bz2
 
 -------------------------------------------
 
@@ -65,6 +64,9 @@ Port Notes:
 - No manual page: Copied from Debian.
 - strc.[ch]: added #ifndef __CYGWIN__
 
+----- version 1.5.2-1 -----
+- New upstream release 2012-01-29 Jari Aalto
+
 ----- version 1.4.4-2 -----
 - Update 2011-04-29 Jari Aalto
 - Remove /usr/share/man/man1/*.1.gz
@@ -79,4 +81,4 @@ Port Notes:
 - Initial release 2007-09-12 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2007-2011 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2007-2012 Jari Aalto; Licenced under GPL v2 or later
