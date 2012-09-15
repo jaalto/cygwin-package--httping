@@ -8,7 +8,7 @@ url; send a request and retrieve the reply (only the headers).
 
 Runtime requirements:
   libgcc1
-  libopenssl098
+  libopenssl100
 
 Build requirements:
   openssl-devel
@@ -40,15 +40,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack httping-1.5.2-1-src.tar.bz2
+  unpack httping-1.5.4-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./httping*.sh all
 
 This will create:
-  httping-1.5.2-1.tar.bz2
-  httping-1.5.2-1-src.tar.bz2
+  httping-1.5.4-1.tar.bz2
+  httping-1.5.4-1-src.tar.bz2
 
 -------------------------------------------
 
@@ -63,6 +63,9 @@ Port Notes:
 - Makefile: rewrote 'install'
 - No manual page: Copied from Debian.
 - strc.[ch]: added #ifndef __CYGWIN__
+
+----- version 1.5.4-1 -----
+- New upstream release 2012-09-15 Jari Aalto
 
 ----- version 1.5.2-1 -----
 - New upstream release 2012-01-29 Jari Aalto
