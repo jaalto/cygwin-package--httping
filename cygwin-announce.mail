@@ -14,7 +14,7 @@ url; send a request and retrieve the reply (only the headers).
 CHANGES SINCE LAST RELEASE
 ==========================
 
-See homepage and section "Changes".
+See homepage for release notes.
 
 INSTALL OR UPGRADE NOTES
 ========================
@@ -30,7 +30,7 @@ system. Then, run setup and answer all of the questions. You'll find
 the package listed in the "All" category. After installation, read the
 documentation at directories:
 
-    /usr/share/doc/<package-version>/*
+    /usr/share/doc/<package>/*
     /usr/share/doc/Cygwin/<package-version>.README
 
 If you have questions or comments, please send them to the Cygwin
