@@ -19,7 +19,7 @@ Canonical homepage:
   http://packages.debian.org/httping
 
 Canonical download:
-  See above
+  https://github.com/flok99/httping
 
 Version control repository:
 
@@ -29,7 +29,7 @@ IRC channel:
 
 Upstream contact:
   Author: Folkert Van Heusden <folkert@vanheusden.com>
-  Bugs: Folkert Van Heusden <folkert@vanheusden.com>
+  Bugs: https://github.com/flok99/httping/issues
 
 License:
   GPL-2
