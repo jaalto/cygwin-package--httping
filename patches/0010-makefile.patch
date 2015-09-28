@@ -1,0 +1,19 @@
+---
+ Makefile |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+--- a/Makefile
++++ b/Makefile
+@@ -34,10 +34,10 @@ TARGET=httping
+ LOCALEDIR=/usr/share/locale
+ 
+ DEBUG=yes
+-WFLAGS=-Wall -W -Wextra -pedantic -D_FORTIFY_SOURCE=2
++WFLAGS=-std=gnu11 -Wall -W -Wextra -pedantic -D_FORTIFY_SOURCE=2
+ OFLAGS=
+ CFLAGS+=$(WFLAGS) $(OFLAGS) -DVERSION=\"$(VERSION)\" -DLOCALEDIR=\"$(LOCALEDIR)\"
+-LDFLAGS+=-lm
++LDFLAGS+=-lm -lintl
+ 
+ PACKAGE=$(TARGET)-$(VERSION)
+ PREFIX?=/usr

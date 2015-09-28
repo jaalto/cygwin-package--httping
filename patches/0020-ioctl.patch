@@ -1,0 +1,18 @@
+---
+ main.c |    5 +++++
+ 1 file changed, 5 insertions(+)
+
+--- a/main.c
++++ b/main.c
+@@ -1,6 +1,11 @@
+ /* Released under GPLv2 with exception for the OpenSSL library. See license.txt */
+ /* $Revision: 278 $ */
+ 
++#ifdef __CYGWIN__
++  /* from linux/termios.h */
++  #define TIOCOUTQ 0x5411
++#endif
++
+ #define _GNU_SOURCE
+ #include <sys/ioctl.h>
+ #include <stdio.h>
