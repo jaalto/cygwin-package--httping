@@ -1,12 +1,12 @@
 To: cygwin-announce@cygwin.com
-Subject: Updated: httping 1.6-1 -- Ping-like program for http-requests
+Subject: Updated: httping 2.4+20150928+git5f905fc-1 -- Ping-like program for http-requests
 --text follows this line--
 
 PACKAGE DESCRIPTION
 ===================
 
 Homepage: http://freshmeat.net/projects/httping
-License : GPL-2
+License : AGPL-3+
 
 Show how long it takes to connect to a hostname or remote
 url; send a request and retrieve the reply (only the headers).
