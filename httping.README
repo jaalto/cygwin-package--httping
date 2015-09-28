@@ -11,6 +11,7 @@ Runtime requirements:
   libopenssl100
 
 Build requirements:
+  quilt
   openssl-devel
 
 Canonical homepage:
@@ -32,7 +33,7 @@ Upstream contact:
   Bugs: https://github.com/flok99/httping/issues
 
 License:
-  GPL-2
+  AGPL-3+
 
 Language:
   C
@@ -40,15 +41,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack httping-1.6-1-src.tar.bz2
+  unpack httping-2.4+20150928+git5f905fc-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./httping*.sh all
 
 This will create:
-  httping-1.6-1.tar.bz2
-  httping-1.6-1-src.tar.bz2
+  httping-2.4+20150928+git5f905fc-1.tar.xz
+  httping-2.4+20150928+git5f905fc-1-src.tar.xz
 
 -------------------------------------------
 
@@ -63,6 +64,9 @@ Port Notes:
 - Makefile: rewrote 'install'
 - No manual page: Copied from Debian.
 - strc.[ch]: added #ifndef __CYGWIN__
+
+----- version 2.4+20150928+git5f905fc-1 -----
+- New upstream release 2015-09-28 Jari Aalto
 
 ----- version 1.6-1 -----
 - New upstream release 2013-03-05 Jari Aalto
@@ -87,4 +91,4 @@ Port Notes:
 - Initial release 2007-09-12 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2007-2013 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2007-2015 Jari Aalto; Licenced under GPL v2 or later
