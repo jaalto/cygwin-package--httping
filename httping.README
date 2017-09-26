@@ -9,10 +9,12 @@ url; send a request and retrieve the reply (only the headers).
 Runtime requirements:
   libgcc1
   libopenssl100
+  libfftw3_3
 
 Build requirements:
   quilt
   openssl-devel
+  libfftw3-devel
 
 Canonical homepage:
   http://freshmeat.net/projects/httping
