@@ -2,4 +2,4 @@ sdesc: "Ping-like program for http-requests"
 ldesc: "Show how long it takes to connect to a hostname or remote
 url; send a request and retrieve the reply (only the headers)."
 category: Web
-requires: libgcc1 libopenssl100
+requires: libgcc1 libopenssl100 libfftw3_3
